@@ -1,0 +1,13 @@
+;-----------------yunhan-zhou.local.master-------------
+$TTL    1h;
+@       IN      SOA     debian.yunhan-zhou.local. yunhan-zhou.iutbeziers.fr. (
+                         2019100101     ; Serial
+                         3600           ; Refresh(1h)
+                         3600           ; Retry(1h)
+                        2419200         ; Expire(41j)
+                         86400 )        ; Minimum(24h)
+@       IN      NS      debian.yunhan-zhou.local.
+$ORIGIN 22.3.202.10.in-addr.arpa.
+@       IN      PTR     debian.yunhan-zhou.local.
+
+

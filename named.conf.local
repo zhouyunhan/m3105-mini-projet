@@ -1,0 +1,21 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "db.yunhan-zhou.local" {
+	type master;
+//	allow-transfer {10.202.3.22;};
+	file "/etc/bind/db.yunhan-zhou.local";
+	};
+
+// Reverse Zone de in.iutbeziers.fr
+// Adaptez la zone a l’adressage ip de la salle
+
+zone "22.3.202.10.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.10.202.3.22";
+	};
